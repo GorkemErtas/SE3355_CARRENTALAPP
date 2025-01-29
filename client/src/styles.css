@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between; /* Başlık ve buton arasını açar */
+    align-items: center; /* Dikey hizalama */
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .button-group {
+    display: flex;
+    align-items: center; /* Butonları dikey hizalar */
+    gap: 10px; /* Butonlar arasına boşluk ekler */
+  }
+  
+  .form-section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    gap: 250px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-section label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .dropdown,
+  .input-date,
+  .input-time {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: #b71c1c;
+  }
+  
+  .car-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .car-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .car-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .filter-header {
+    display: flex;
+    align-items: flex-end; /* Dikey hizalama */
+    gap: 10px; /* Filtreler arasında boşluk */
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc; /* Alt çizgi */
+  }
+  
+  .filter-header div {
+    display: flex;
+    align-items: center; /* Label ve dropdown hizalaması */
+    gap: 10px; /* Label ve dropdown arasında boşluk */
+  }
+  
+  .filter-dropdown {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .language-button,
+.login-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.language-button:hover,
+.login-button:hover {
+  background-color: #0056b3;
+}
+  
+  .login-container,
+  .register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .google-login {
+    background-color: #db4437;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .google-login:hover {
+    background-color: #c23321;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  form div {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  
