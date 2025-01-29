@@ -216,7 +216,7 @@ const HomePage = () => {
         <button className="button" onClick={handleRent}>{translations[language].rent}</button>
       </div>
       {/* Google Maps */}
-      <LoadScript googleMapsApiKey="AIzaSyDjSXEF1dPzfEcHvcTxKxYN14Easaxk9j0">
+      <LoadScript googleMapsApiKey="">
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
           center={coordinates} // Kullanıcının şehir bilgisine göre merkezlenir
