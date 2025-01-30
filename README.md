@@ -9,4 +9,3 @@ Kullanıcı Kayıt ve Giriş: E-posta ve şifre ile kullanıcı kaydı ve giriş
 Araç Arama ve Filtreleme: Farklı araçları marka, şanzıman türü ve fiyat aralığına göre filtreleyebilme.
 Google Maps Entegrasyonu: Ofis konumlarını harita üzerinde görüntüleyebilme.
 Çoklu Dil Desteği: İngilizce ve Türkçe dillerinde kullanılabilir.
-Kullanıcı Profili: Kullanıcı bilgilerini görüntüleme ve saklama.
