@@ -1,32 +1,36 @@
 const express = require("express");
-const { OAuth2Client } = require("google-auth-library");
-const User = require("../models/user");
-
+const User = require("../models/user"); // Kullanıcı modelini çekiyoruz.
 const router = express.Router();
-const client = new OAuth2Client("");
 
-router.post("/google-login", async (req, res) => {
-  const { token } = req.body;
+router.post("/google", async (req, res) => {
+  const { email, firstName, lastName } = req.body;
 
   try {
-    const ticket = await client.verifyIdToken({
-      idToken: token,
-      audience: "",
-    });
-
-    const { email, name } = ticket.getPayload();
-
-    // Kullanıcıyı kontrol et veya oluştur
     let user = await User.findOne({ email });
+
     if (!user) {
-      user = new User({ email, firstName: name, password: "" });
+      // Eğer kullanıcı kayıtlı değilse, yeni bir kullanıcı oluştur.
+      user = new User({
+        firstName,
+        lastName,
+        email,
+        password: "", // Google ile giriş yapanların şifresi olmayacak.
+        country: "Unknown",
+        city: "Unknown",
+        photoUrl: "",
+      });
+
       await user.save();
     }
 
-    res.status(200).json({ message: "Giriş başarılı!", user });
+    // Kullanıcı bilgilerini geri döndür.
+    res.status(200).json({
+      firstName: user.firstName,
+      email: user.email,
+    });
   } catch (error) {
-    console.error("Google giriş hatası:", error);
-    res.status(401).json({ message: "Giriş başarısız!" });
+    console.error("Google ile giriş sırasında hata:", error);
+    res.status(500).json({ message: "Google ile giriş başarısız." });
   }
 });
 

@@ -16,7 +16,6 @@ const seedCars = async () => {
       console.log('No office found. Please create an office first.');
       return;
     }
-
     
     const cars = [
       {
@@ -62,6 +61,28 @@ const seedCars = async () => {
         minAge: 2,
         office: '67969a347a7c3aebc4006a9b',
         imageUrl: 'http://localhost:5000/public/images/m4.jpeg',
+      },
+      {
+        model: 'Toyota Corolla',
+        fuelType: 'Diesel',
+        transmission: 'Automatic',
+        dailyPrice: 2300.18,
+        deposit: 3400,
+        mileage: 790,
+        minAge: 25,
+        office: '679bb1f997343478369e7528',
+        imageUrl: 'http://localhost:5000/public/images/toyota.jpeg',
+      },
+      {
+        model: 'Opel Corsa',
+        fuelType: 'Diesel',
+        transmission: 'Manuel',
+        dailyPrice: 2450.18,
+        deposit: 2720,
+        mileage: 760,
+        minAge: 24,
+        office: '679bb1f997343478369e7528',
+        imageUrl: 'http://localhost:5000/public/images/opel.jpeg',
       },
     ];
 

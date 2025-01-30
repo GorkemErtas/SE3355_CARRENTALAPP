@@ -14,8 +14,6 @@ router.post("/", async (req, res) => {
       return res.status(400).json({ message: "Bu email adresi zaten kayıtlı!" });
     }
 
-
-    
     const newUser = new User({
       firstName,
       lastName,

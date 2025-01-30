@@ -9,8 +9,6 @@ const carRoutes = require('./routes/cars');
 const registerRoutes = require("./routes/register");
 const loginRoutes = require("./routes/login");
 const userRoutes = require("./routes/user");
-const googleAuthRoutes = require("./routes/googleAuth");
-
 
 const app = express();
 
@@ -24,7 +22,7 @@ app.use('/api/cars', carRoutes);
 app.use("/api/login", loginRoutes);
 app.use("/api/register", registerRoutes);
 app.use("/api/user", userRoutes);
-app.use("/api/auth", googleAuthRoutes);
+
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // Connect to MongoDB
