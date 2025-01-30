@@ -68,7 +68,7 @@ const HomePage = () => {
         const geoResponse = await axios.get("https://maps.googleapis.com/maps/api/geocode/json", {
           params: {
             address: response.data.city,
-            key: "AIzaSyDjSXEF1dPzfEcHvcTxKxYN14Easaxk9j0",
+            key: "",
           },
         });
         if (geoResponse.data.results.length > 0) {
