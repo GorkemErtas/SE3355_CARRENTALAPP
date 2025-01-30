@@ -3,7 +3,7 @@ const { OAuth2Client } = require("google-auth-library");
 const User = require("../models/user");
 
 const router = express.Router();
-const client = new OAuth2Client("208971797877-o73qp8c019cfp0pudlt5rsvf33d486bg.apps.googleusercontent.com");
+const client = new OAuth2Client("");
 
 router.post("/google-login", async (req, res) => {
   const { token } = req.body;
@@ -11,7 +11,7 @@ router.post("/google-login", async (req, res) => {
   try {
     const ticket = await client.verifyIdToken({
       idToken: token,
-      audience: "208971797877-o73qp8c019cfp0pudlt5rsvf33d486bg.apps.googleusercontent.com",
+      audience: "",
     });
 
     const { email, name } = ticket.getPayload();
