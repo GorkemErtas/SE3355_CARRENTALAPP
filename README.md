@@ -7,7 +7,6 @@ Bu proje, kullanıcıların araç kiralaması yapmasını sağlayan bir web uygu
 📌 Özellikler
 Kullanıcı Kayıt ve Giriş: E-posta ve şifre ile kullanıcı kaydı ve girişi.
 Araç Arama ve Filtreleme: Farklı araçları marka, şanzıman türü ve fiyat aralığına göre filtreleyebilme.
-Araç Kiralama: Seçilen tarih aralığında araç rezervasyonu oluşturma.
 Google Maps Entegrasyonu: Ofis konumlarını harita üzerinde görüntüleyebilme.
 Çoklu Dil Desteği: İngilizce ve Türkçe dillerinde kullanılabilir.
 Kullanıcı Profili: Kullanıcı bilgilerini görüntüleme ve saklama.
