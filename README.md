@@ -1,6 +1,7 @@
 video link: https://1drv.ms/v/c/66ca3a0d2e4dcdf5/EYrjmR_cGsdDlP4hqlYfiDgB0PkQg4X_OmxI8lNeQenPJQ?e=7ihJbx
 
 Araç Kiralama Sistemi
+Bu proje MongoDB, Express.js, React.js, Node.js tabanlı bir araç kiralama platformu olarak tasarlanmış.
 Bu proje, kullanıcıların araç kiralaması yapmasını sağlayan bir web uygulamasıdır. Kullanıcılar üye olup giriş yapabilir, araçları listeleyebilir, filtreleme yapabilir.
 
 📌 Özellikler
